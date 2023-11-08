@@ -13,8 +13,8 @@ For the TS file go to **src**.
 **smartDate**
 
 ```javascript
-let date = new Date() // Creates current date, if you want a different date then input in the () an string. Example: Date("2023-1-1")
-let date_format = SmartFormat.SmartDate(date,"en-US","") // Returns a string
+let date = new Date() // Gets current date, if you want a different date then put an string. Example: Date("2023-1-1")
+let date_format = SmartFormat.SmartDate(date,"en-US","long") // Returns a string
 
 console.log(date_format) // Expected Output: Today
 ```
