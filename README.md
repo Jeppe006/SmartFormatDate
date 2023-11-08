@@ -2,7 +2,7 @@
 
 # Example Usage
 
-> getDate
+**getDate**
 
 ```
 let date = new Date()
