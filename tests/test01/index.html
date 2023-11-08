@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            overflow: hidden;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            display: block;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            margin-top: 20vh;
+            font-size: 2em;
+        }
+
+        input, select{
+            border: 0;
+            width: 10vw;
+            height: 3vw;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 1em;
+            background-color: #242424;
+            color:white;
+            margin: 2vh;
+        }
+
+        input:focus {outline:none}
+
+        h2{
+            font-size: 5em;
+            margin: 2vh
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>🙂</h2>
+    <input placeholder="Year-Month-Day" oninput="updateDate()">
+
+    <h1>Input a valid date</h1>
+
+    <script src="../../compiled/SmartFormatDateModule.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
