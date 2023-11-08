@@ -10,7 +10,7 @@ For the TS file go to **src**.
 
 # Usage:
 
-**smartDate**
+**SmartDate**
 
 ```javascript
 let date = new Date() // Gets current date, if you want a different date then put an string. Example: Date("2023-1-1")
