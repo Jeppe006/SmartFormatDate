@@ -1,3 +1,8 @@
+interface FormatConfig {
+    Language? : string;
+    NewDate? : Date;
+}
+
 let SmartFormat : {} = {
     getDate: function(Language : string, NewDate : Date){
         let currentDate : Date = new Date
