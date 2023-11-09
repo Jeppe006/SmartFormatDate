@@ -6,8 +6,6 @@ not the best but not the worst.
 To get the JS file go to **compiled**.
 For the TS file go to **src**.
 
-# Usage:
-
 **Supported languages**
 
 > English: ```en-US```\
@@ -16,6 +14,14 @@ For the TS file go to **src**.
 > Danish: ```dk-EU```\
 > Finnish: ```fi-EU```\
 > German: ```de-EU```
+
+**Variables**
+
+Date : Date Object
+language : string
+format : string | "long" | "short" | "narrow"
+
+# Usage:
 
 **SmartDate**
 
