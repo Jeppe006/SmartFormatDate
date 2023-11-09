@@ -5,7 +5,7 @@ const input = document.querySelector("input")
 function updateDate(){
     let date = new Date(input.value)
     try {
-        let formattedDate = new SmartFormat(date).smartDate()
+        let formattedDate = new SmartFormat(date,"en-US","long").smartDate()
         h1.innerHTML = formattedDate
         h2.innerHTML = "😄"
     } catch (error) {
