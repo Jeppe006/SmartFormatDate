@@ -19,7 +19,7 @@ For the TS file go to **src**.
 
 Date : Date Object\
 language : string\
-format : string [ "long" | "short" | "narrow" | "numeric" | "2-digit ]
+format : string [ "long" | "short" | "narrow" | "numeric" | "2-digit" ]
 
 # Usage:
 
