@@ -10,12 +10,12 @@ For the TS file go to **src**.
 
 **Supported languages**
 
-  English: ``en-US``
-  Swedish: ``sv-EU``
-  Norwegian: ``no-EU``
-  Danish: ``dk-EU``
-  Finnish: ``fi-EU``
-  German: ``de-EU``
+  English: ```en-US```
+  Swedish: ```sv-EU```
+  Norwegian: ```no-EU```
+  Danish: ```dk-EU```
+  Finnish: ```fi-EU```
+  German: ```de-EU```
 
 **SmartDate**
 
