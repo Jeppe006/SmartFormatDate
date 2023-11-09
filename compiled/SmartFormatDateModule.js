@@ -1,3 +1,4 @@
+"use strict";
 const _textlist = {
     "Today": {
         "en-US": "Today",
@@ -46,9 +47,6 @@ class SmartFormat {
         const pastDays = (date.getTime() - firstDayOfYear.getTime()) / 86400000;
         return Math.floor((pastDays + firstDayOfYear.getDay() + 1) / 7);
     }
-    _isValidDate(date) {
-        return isNaN(date);
-    }
     _splitDate(date) {
         const year = date.getFullYear();
         const month = date.getMonth() + 1;
@@ -66,8 +64,8 @@ class SmartFormat {
         return currentYear == compareYear && currentWeek == compareWeek;
     }
     smartDate() {
-        if (this._isValidDate(this.date)) {
-            throw Error(`Invalid Argument 1. Date is invalid`);
+        if (isNaN(this.date.getTime())) {
+            throw new Error(`Invalid Argument 1. Date is invalid`);
         }
         const currentDate = new Date();
         const currentDateSplit = this._splitDate(currentDate);
