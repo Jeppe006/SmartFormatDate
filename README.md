@@ -17,8 +17,8 @@ For the TS file go to **src**.
 
 **Variables**
 
-Date : Date Object
-language : string
+Date : Date Object\
+language : string\
 format : string | "long" | "short" | "narrow"
 
 # Usage:
