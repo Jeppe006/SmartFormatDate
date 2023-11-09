@@ -10,7 +10,7 @@ For the TS file go to **src**.
 
 **Supported languages**
 
-> English: ``en-US``
+> English: ``en-US``/n
 > Swedish: ``sv-EU``
 > Norwegian: ``no-EU``
 > Danish: ``dk-EU``
