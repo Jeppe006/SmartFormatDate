@@ -1,3 +1,5 @@
+
+
 const _textlist = {
     "Today" : {
         "en-US": "Today",
@@ -35,24 +37,20 @@ const _textlist = {
 }
 
 class SmartFormat {
-    private readonly language: string
+    private readonly language: "en-US" | "sv-EU" | "no-EU" | "dk-EU" | "fi-EU" | "de-EU"
     private readonly date: Date
-    private readonly format: Intl.DateTimeFormatOptions | string
+    private readonly format: "long" | "short" | "narrow"
 
-    constructor(date: Date, language: string, format: string) {
+    constructor(date: Date, language: "en-US" | "sv-EU" | "no-EU" | "dk-EU" | "fi-EU" | "de-EU", format: "long" | "short" | "narrow") {
         this.language = language || "en-US"
         this.date = date || new Date()
-        this.format = format || "long"  
+        this.format = format || "long"
     }
 
     private _getWeek(date : Date) : number {
         const firstDayOfYear : Date = new Date(date.getFullYear(), 0, 1)
         const pastDays = (date.getTime() - firstDayOfYear.getTime()) / 86400000
         return Math.floor((pastDays + firstDayOfYear.getDay() + 1) / 7)
-    }
-
-    private _isValidDate(date : Date | any): boolean {
-        return isNaN(date)
     }
 
     private _splitDate(date: Date): { year: number, month: number, day: number } {
@@ -76,7 +74,7 @@ class SmartFormat {
     }
 
     smartDate(): string {
-        if(this._isValidDate(this.date)){throw Error(`Invalid Argument 1. Date is invalid`)}
+        if (isNaN(this.date.getTime())) {throw new Error(`Invalid Argument 1. Date is invalid`);}
 
         const currentDate = new Date()
         const currentDateSplit = this._splitDate(currentDate)
@@ -108,6 +106,5 @@ class SmartFormat {
         }else{
             return `${dateSplit.year} ${this.date.toLocaleString(this.language, { month: this.format })} ${dateSplit.day}`
         }
-
     }
 }
